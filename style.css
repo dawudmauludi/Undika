@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Roboto:wght@100;300;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+
+}
+
+/* variabel */
+:root{
+    --main-color:#258E7C;
+    --bg-color:#F2F2F2;
+}
+/* variabel end*/
+
+section{
+    padding: 50px 50px;
+}
+
+/* nabvbar */
+header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    right: 0;
+     z-index: 1000;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 15px 50px;
+     transition: .5s;
+     /* background-color: var(--bg-color); */
+} 
+
+
+
+.header.stiky{
+    background-color: var(--bg-color);
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.logo img{
+    width: 50px;
+ 
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.text-logo{
+    color: #258E7C;
+
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 4rem;
+    padding-right: 25px;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+   font-size: 20px;
+   color: #000;
+   font-weight: bold;
+   font-family: 'Poppins';
+  
+}
+
+.btn{
+    height: 45px;
+    width: 150px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+/* nabvbar end */
+
+
+/* beranda */
+
+.Beranda{
+width: 100%;
+min-height: 100vh;
+background-color: #ffffff;
+background-image: linear-gradient(45deg, #ffffff 0%, #85cdc0 100%);
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+align-items: center;
+gap: 8rem;
+}
+
+.beranda-text h1{
+    font-size: 3.4rem;
+    font-family: Calistoga;
+    color: #000;
+    top: 40px;
+}
+
+.beranda-text p{
+color: #4F4F4F;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 4rem;
+}
+
+.jelajah{
+    width: 250px;
+    height: 50px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.jelajah a{
+    color: #fff;
+    text-decoration: none;  
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: 'Poppins';
+}
+
+.suhu{
+    font-size:17px;
+    font-family: 'Poppins';
+}
+
+.celcius{
+    font-size: 50px;
+}
+
+.img{
+    margin-top: 50px;
+}
+
+.img img{
+    width: 350px;
+}
+/* beranda end */
+
+
+
+/* Artikel  */
+/* kotak 1 */
+.artikel-judul{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+.foto1 img{
+    margin-top: 20px;
+}
+
+
+.artikel1{
+    top: 5px;
+    width: 565px;
+    height: 315px;
+    background-color: #fff;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.penjelas-artikel{
+    padding: 30px 40px;
+}
+
+.judul1{
+    color: #000;
+
+font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.judul-isi1{
+    color: #7B7B7B;
+
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+padding-top: 20px;
+}
+
+.kumpulan-hastag{
+    display: flex;
+   
+}
+
+.ekstrim{
+    padding-right: 5px;
+    color: #258E7C;
+
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.tanggal-artikel{
+    color: #7B7B7B;
+
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.vertikal{
+     /*mengatur border bagian kiri tag div */
+	 border-left: 2px solid #7B7B7B;
+     /* mengatur tinggi tag div*/
+     height: 20px;
+     /*mengatur lebar tag div*/
+     width : 1px;
+     padding-right: 5px;
+}
+
+.hastag{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+.isi-artikel{
+    width: 200px;
+    height: 30px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+.isi-artikel a{
+    text-decoration: none;
+    color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+
+
+/* kotak 1 end */
+
+
+/* kotak 2  */
+.kotak2-container{
+    width: 390px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.container2{
+    padding: 20px;
+}
+
+.judul2{
+    color: #000;
+
+font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.judul-isi2{
+    color: #7B7B7B;
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding-top: 10px;
+margin-top: 20px;
+}
+
+
+.hastag2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+}
+
+.kumpulan-hastag2{
+    display: flex;
+   
+}
+
+.isi-artikel2{
+    width: 150px;
+    height: 30px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+.isi-artikel2 a{
+    text-decoration: none;
+    color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+/* kotak 2 end */
+
+
+/* kotak 3  */
+
+.artikel3{
+    top: 5px;
+    width: 390px;
+    height: 204px;
+    background-color: #fff;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.penjelas-artikel3{
+    padding: 5px 20px;
+}
+
+.judul3{
+    color: #000;
+
+font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 10px;
+}
+
+.judul-isi3{
+    color: #7B7B7B;
+
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.kumpulan-hastag{
+    display: flex;
+   
+}
+
+.ekstrim{
+    padding-right: 5px;
+    color: #258E7C;
+
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.tanggal-artikel{
+    color: #7B7B7B;
+
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.vertikal{
+     /*mengatur border bagian kiri tag div */
+	 border-left: 2px solid #7B7B7B;
+     /* mengatur tinggi tag div*/
+     height: 20px;
+     /*mengatur lebar tag div*/
+     width : 1px;
+     padding-right: 5px;
+}
+
+.hastag{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.isi-artikel3{
+    width: 150px;
+    height: 30px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+.isi-artikel3 a{
+    text-decoration: none;
+    color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+
+/* kotak 3 end */
+
+
+/* kotak 4  */
+.artikel4{
+    top: 5px;
+    width: 347px;
+    height: 228px;
+    background-color: #fff;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.penjelas-artikel4{
+    padding: 1px 20px;
+}
+
+.judul4{
+    color: #000;
+
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 5px;
+}
+
+.judul-isi4{
+    color: #7B7B7B;
+
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.kumpulan-hastag{
+    display: flex;
+   
+}
+
+.ekstrim{
+    padding-right: 5px;
+    color: #258E7C;
+
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.tanggal-artikel{
+    color: #7B7B7B;
+
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.vertikal{
+     /*mengatur border bagian kiri tag div */
+	 border-left: 2px solid #7B7B7B;
+     /* mengatur tinggi tag div*/
+     height: 20px;
+     /*mengatur lebar tag div*/
+     width : 1px;
+     padding-right: 5px;
+}
+
+.hastag4{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    
+}
+
+.isi-artikel4{
+    width: 100px;
+    height: 30px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+.isi-artikel4 a{
+    text-decoration: none;
+    color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    font-size: 13px;
+    font-family: 'Poppins';
+}
+
+/* kotak 4 end */
+
+
+/* kotak 5 */
+.kotak5-container{
+    width: 347px;
+    height: 230px;
+    background-color: #fff;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.container5{
+    padding: 20px;
+}
+
+.judul5{
+    color: #000;
+
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.judul-isi5{
+    color: #7B7B7B;
+
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+
+.hastag5{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.kumpulan-hastag5{
+    display: flex;
+   
+}
+
+.isi-artikel5{
+    width: 100px;
+    height: 30px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+.isi-artikel5 a{
+    text-decoration: none;
+    color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+/* kotak 5 end */
+
+
+.artikel-container{
+    display: flex;
+    gap: 1rem;
+}
+/* Artikel End  */
+
+
+/* Edukasi dampak */
+.edukasi-dampak{
+    width: 100%;
+min-height: 100vh;
+background-color: #ffffff;
+background-image: linear-gradient(45deg, #ffffff 0%, #85cdc0 100%);
+display: flex;
+/* display: grid;
+grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+gap: 8rem; */
+}
+
+
+.text-dampak{
+    color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+
+
+
+.gelembung1{
+    width: 400px;
+    height: 400px;
+    background-color: #7CB9AE;
+    border-radius: 50%;
+  
+
+
+}
+.gelembung2{
+    width: 400px;
+    height: 400px;
+    background-color: #7CB9AE;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+}
+/* Edukasi dampak end */
